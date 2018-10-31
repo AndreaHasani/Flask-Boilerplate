@@ -1,10 +1,7 @@
 .footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+    height: $footbar-height;
   // padding: 1rem;
-  background-color: coral;
+  background-color: $main-color;
   text-align: center;
 }
 

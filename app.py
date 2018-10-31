@@ -5,7 +5,6 @@ import os
 application = Flask(__name__)
 APP_DIR = os.path.dirname(os.path.realpath(__file__))
 application.config.from_pyfile('config.py')
-application.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
 
 from views import *
 

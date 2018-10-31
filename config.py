@@ -1,2 +1,4 @@
-SQLALCHEMY_DATABASE_URI        = 'mysql://strixx:toor@localhost/tubex69'
+import os
+SQLALCHEMY_DATABASE_URI = 'mysql://username:password@localhost/database'
 SQLALCHEMY_TRACK_MODIFICATIONS = True
+secret_key = os.urandom(24)

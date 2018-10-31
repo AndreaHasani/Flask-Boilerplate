@@ -3,6 +3,11 @@ $break-sm: 600px;
 $break-md: 800px;
 $break-lg: 1000px;
 $break-xl: 1200px;
+$main-color: #e41b1b;
+$main-color-darker: #cd1818;
+$main-color-lighter: #e73232;
+$topbar-height: 3em;
+$footbar-height: 3.5em;
 
 html {
     color: #222;
@@ -52,13 +57,17 @@ Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
 
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
-    padding-bottom: 6rem;
     min-height: 100%;
 }
 
-.wrapper {
+.main-container {
+    min-height: calc(100% - (#{$topbar-height} + #{$footbar-height}));
     width: 90%;
     margin: 0 5%;
+}
+
+#home, #news {
+    height: 100vh;
 }
 
 /* ===================
@@ -92,6 +101,7 @@ ALL: Orange Theme
 	    float: right;
 
 	    li {
+		margin: 0;
 		width: 150px;
 		float: left;
 

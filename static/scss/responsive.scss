@@ -14,7 +14,7 @@ Media Queries
     .mobile-menu {
 
 	#menu {
-	    background-color: #677d8c;
+	    background-color: $main-color;
 	    margin-bottom: 2em;
 	}
 
@@ -23,7 +23,14 @@ Media Queries
 	}
 	ul {
 	    position: static;
-	    display: none;
+	    overflow: hidden;
+	    max-height: 0;
+	    clear: both;
+	    -webkit-transition: all 0.4s ease-out;
+	    -moz-transition: all 0.4s ease-out;
+	    -ms-transition: all 0.4s ease-out;
+	    -o-transition: all 0.4s ease-out;
+	    transition: all 0.4s ease-out;
 	}
 	li {
 	    margin-bottom: 1px;
@@ -33,9 +40,11 @@ Media Queries
 	    min-width: 140px;
 	}
 	.show-menu {
-	    border-bottom: solid;
 	    display: block;
-	    border-bottom-color: #586d7b;
+	    border-bottom: solid;
+	    border-bottom-color: $main-color-darker;
+	    border-top: solid;
+	    border-top-color: $main-color-darker;
 	}
 	.lines {
 	    border-bottom: 15px double #f8f8f8;
