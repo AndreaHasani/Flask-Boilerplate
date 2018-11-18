@@ -89,7 +89,6 @@ input[type=checkbox] {
     display: none;
     &:checked ~ #menu {
 	max-height: 15em;
-	width: 100%;
     }
 }
 }
