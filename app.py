@@ -9,4 +9,4 @@ application.config.from_pyfile('config.py')
 from views import *
 
 if __name__ == '__main__':
-    application.run(host="0.0.0.0",port="5005", debug=True)
+    application.run(host="0.0.0.0")
