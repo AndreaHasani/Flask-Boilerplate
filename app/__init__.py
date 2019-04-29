@@ -6,7 +6,4 @@ application = Flask(__name__)
 APP_DIR = os.path.dirname(os.path.realpath(__file__))
 application.config.from_pyfile('config.py')
 
-from views import *
-
-if __name__ == '__main__':
-    application.run(host="0.0.0.0")
+from app.views import *

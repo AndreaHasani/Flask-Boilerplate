@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, session, jsonify, abort
-from models import *
+from app.models import *
 from app import application
-from functions import *
+from app.functions import *
 
 
 @application.route("/", methods=["GET"])
